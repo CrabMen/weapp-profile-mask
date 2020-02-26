@@ -1,0 +1,32 @@
+<!-- pages/home/home.wxml -->
+<!-- <text>pages/home/home.wxml</text> -->
+<scroll-view class="container">
+  <view class="imageContainer" bind:touchstart="touchStart" bind:touchend="touchEnd" bind:touchmove="touchMove">
+    <image src="{{selectedImg}}" class="image"></image>
+    <icon type="waiting" class="handle" id="handle" color="green" style="top:{{20+handleCenterY-10+'px'}};left:{{handleCenterX-10+'px'}}"></icon>
+    <image class="mask" id='mask' src="../../images/{{selectedMaskIndex}}.png" style="top:{{20+hatCenterY-hatSize/2-2+'px'}};left:{{hatCenterX-hatSize/2-2+'px'}};transform:rotate({{rotate+'deg'}}) scale({{scale}})"></image>
+  </view>
+  <view class="content ">
+    <button size="mini" class="title" >常用口罩</button> 
+    <scroll-view class="scrollView" scroll-x="true">
+      <view class="maskContainer" wx:for="...imgList" wx:key="index">
+        <image class="images" src="../../images/{{index}}.png" data-idx="{{index}}" bind:tap="selectMaskAction"></image>
+        <image wx:if="{{index == selectedMaskIndex}}" src="../../images/check.png" class="dot" />
+      </view>
+    </scroll-view>
+    <view class="buttons">
+      <button size="mini" open-type="getUserInfo" type="primary" bindgetuserinfo="onGotUserInfo">
+        微信头像
+      </button>
+      <button size="mini" bind:tap="chooseImgAction" type="primary">选择图片</button>
+      <button size="mini" bind:tap="generateImgAction" type="primary">生成图片</button>
+    </view>
+  </view>
+  <view class="footer">
+    <view bind:tap="navToHands" class="tips">如何正确洗手？</view>
+    <view class="tips">|</view>
+    <view bind:tap="navToMask" class="tips">如何佩戴口罩？</view>
+  </view>
+  <button class="share" open-type="share">推荐给好友</button>
+  <action-sheet bindactiontap="btnClick" show="{{showActionsheet}}" wx:key="index" actions="{{groups}}" title="选择图片"></action-sheet>
+</scroll-view>

@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="imageContainer">
+    <canvas class="myCanvas" canvas-id="myCanvas" style="height:300px;;width:100%;" />
+  </view>
+  <view class="buttons">
+    <button size="mini" type="primary"  open-type="share" >分享送口罩</button>
+    <button size="mini" type="primary" bind:tap="savePic">保存至相册</button>
+  </view>
+
+  <view class="footer">
+    <view bind:tap="navToHands" class="tips">如何正确洗手？</view>
+    <view class="tips">|</view>
+    <view bind:tap="navToMask" class="tips">如何佩戴口罩？</view>
+  </view>
+
+</view>

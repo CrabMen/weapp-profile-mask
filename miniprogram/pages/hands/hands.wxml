@@ -1,0 +1,7 @@
+<!--miniprogram/pages/hands/hands.wxml-->
+<!-- <text>miniprogram/pages/hands/hands.wxml</text> -->
+<scroll-view class="videoScroll" scroll-y="{{true}}" enable-flex="{{true}}">
+    <video wx:if="{{localFilePath}}" class="video" src="{{localFilePath}}" object-object-fit="contain" controls="{{true}}" loop="{{true}}" autoplay="{{true}}" ></video>
+    <rich-text class="richText" nodes="{{html}}"/>
+
+</scroll-view>

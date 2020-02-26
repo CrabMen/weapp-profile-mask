@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "action-sheet": "../../components/weui-miniprogram/actionsheet/actionsheet"
+
+
+  }
+}

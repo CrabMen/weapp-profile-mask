@@ -1,0 +1,94 @@
+/* pages/home/home.wxss */
+.imageContainer {
+  display: inline-flex;
+  width: 100%;
+  background-color:#E2E3E6;
+  justify-content: center;
+  padding: 20px 0;
+
+}
+
+.image {
+  display: flex;
+  height:300px;
+  width:300px;
+  background-color:white;
+  /* border: 4rpx solid lightgray; */
+  /* border-radius: 10rpx; */
+
+}
+
+.handle,.cancel{
+  position: absolute;
+  z-index: 1;
+  width:20px;
+  height:20px;
+}
+
+.title {
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  display: inline-block;
+  text-align: left;
+  padding: 20rpx 20rpx;
+}
+
+.buttons {
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 1;
+  display: flex;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+}
+
+.mask{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  border: dashed 2px yellow;
+}
+
+.scrollView {
+  width: 100%;
+  white-space: nowrap;
+  align-items: center;
+}
+.maskContainer {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.images {
+  height: 140rpx;
+  width: 140rpx;
+  border: 2rpx solid;
+  border-color: #eee;
+  margin: 10rpx;
+}
+.dot {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.tips {
+  font-size: 22rpx;
+  color:gray;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.share {
+  font-size: 22rpx;
+  color: gray;
+}
+

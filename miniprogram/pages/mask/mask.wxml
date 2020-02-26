@@ -1,0 +1,8 @@
+<!--miniprogram/pages/mask/mask.wxml-->
+<!-- <text>miniprogram/pages/mask/mask.wxml</text> -->
+
+<scroll-view class="videoScroll">
+    <video class="video" src="{{localFilePath}}" object-object-fit="contain" controls="{{true}}" loop="{{true}}" autoplay="{{true}}" ></video>
+    <rich-text class="richText" nodes="{{html}}"/>
+
+</scroll-view>
