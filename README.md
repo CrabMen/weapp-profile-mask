@@ -1,4 +1,5 @@
 # weapp-profile-mask
+![小程序二维码](https://github.com/CrabMen/weapp-profile-mask/blob/master/gh_372c3545effc_258.jpg)
 
 
 最近看了点小程序相关的东西，所以想自己弄一个简单的小程序，闲逛github看到了[大佬的仓库](https://github.com/idealclover/Wear-A-Mask)，正好可以实战一下小程序，非常感谢``idealclover``开源所做的贡献。
@@ -18,6 +19,5 @@
 最近在家办公，一般使用零碎的时间来写，为期大概一周的样子。小程序是2月25号下午提交的审核，凌晨两点多的时候通过审核，2月26日上午发布的
 
 
-![小程序二维码](https://github.com/CrabMen/weapp-profile-mask/blob/master/gh_372c3545effc_258.jpg)
 
 
